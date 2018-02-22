@@ -1,5 +1,7 @@
 package com.wipro.tutorial.at.steps;
 
+import com.wipro.tutorial.at.pages.HomePage;
+import com.wipro.tutorial.at.pages.LoginPage;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Named;
 import org.jbehave.core.annotations.Then;
@@ -7,9 +9,6 @@ import org.jbehave.core.annotations.When;
 import org.junit.Assert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import com.wipro.tutorial.at.pages.HomePage;
-import com.wipro.tutorial.at.pages.LoginPage;
 
 @Component
 public class LoginSteps extends AbstractSteps {

@@ -24,7 +24,7 @@ public class WebDriverLifeCycleSteps {
         driverProvider.initialize();
 
         // Maximize browser window:
-        //driverProvider.get().manage().window().maximize();
+        driverProvider.get().manage().window().maximize();
         
         // Initialize all Page Object classes:
         for (Object page : pageObjectPostProcessor.getPageObjects()) {
