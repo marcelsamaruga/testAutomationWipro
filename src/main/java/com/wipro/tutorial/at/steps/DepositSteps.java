@@ -4,6 +4,7 @@ import com.wipro.tutorial.at.pages.DepositPage;
 import org.jbehave.core.annotations.Named;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
+import org.junit.Assert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -26,8 +27,7 @@ public class DepositSteps extends AbstractSteps {
 
 	@Then("The return message for Deposit Account is $message")
 	public void assertCreateAccountReturnMessage(@Named("message") String message) {
-		//Assert.assertEquals(message, createAccPage.getReturnMsg());
-		System.out.println(message);
+		Assert.assertEquals(message, depositPage.getReturnMsg());
 	}
 
 }

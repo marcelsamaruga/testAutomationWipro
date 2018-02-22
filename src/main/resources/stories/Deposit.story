@@ -9,7 +9,7 @@ Scenario: Deposit Account Page
 When User clicks on menu Deposit
 
 Scenario: Fill in right values
-When User fills the form with value $amount
+When User fills the form with value <amount>
 And User clicks on Transfer button
 Then The return message for Deposit Account is <message>
 
