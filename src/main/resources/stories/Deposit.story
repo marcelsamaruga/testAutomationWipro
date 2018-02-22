@@ -6,14 +6,10 @@ I want to fill the input, submit the form and check the return message
 GivenStories: stories/CreateAccount.story
 
 Scenario: Deposit Account Page
-When User clicks on menu Deposit
+When
 
 Scenario: Fill in right values
-When User fills the form with value <amount>
-And User clicks on Transfer button
-Then The return message for Deposit Account is <message>
+When
+Then
 
 Examples:
-| amount 		| message 						            |
-|  100	   		| Operation completed with success          |
-|   	   		| The ammount is invalid for the operation  |
